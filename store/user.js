@@ -6,6 +6,18 @@ export const user = {
   longitude: ''
 }
 
+// 读取本地存储的用户信息
+export function init() {
+  try {
+    var value = wx.getStorageSync('userinfo')
+    if (value) {
+      user.userinfo = value
+    }
+  } catch (e) {
+    console.log(e)
+  }
+}
+
 // 退出登录
 export function exit() {
   setUser({})
