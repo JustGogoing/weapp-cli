@@ -1,0 +1,12 @@
+// 对于距离的整理
+var facLimit = function(m) {
+  var m = parseInt(m)
+  var k = parseInt(m / 1000)
+  var l = parseInt(m % 1000);
+  return k +'.'+ l +'km'
+}
+
+
+module.exports = {
+  facLimit: facLimit
+}
