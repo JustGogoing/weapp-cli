@@ -27,7 +27,7 @@ export function checkLogin() {
   }
 }
 
-// 设置userid
+// openid
 export function setOpenid(openid) {
   user.openid = openid
   wx.setStorageSync('openid', openid)
