@@ -8,8 +8,6 @@ export const user = {
 
 // 退出登录
 export function exit() {
-  setFatherCode('')
-  setMyCode('')
   setUser({})
   setOpenid('')
 }
